@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="logo.jpeg" alt="" class="logo" width="100px" height="100px"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Your Favorite<br><span>Cookies</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ex doloremque repellendus illum, repudiandae eveniet unde 
+                    maiores officiis autem incidunt tempora rerum, tenetur vel. 
+                    Numquam assumenda cum hic provident esse qui.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="red.png" class="macaron">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="red.png" onclick="imgSlider('red.png');changeCircleColor('#db8a98')"></li> 
+            <li><img src="yellow.png" onclick="imgSlider('yellow.png');changeCircleColor('#d9d28d')"></li>  
+            <li><img src="brown.png" onclick="imgSlider('brown.png');changeCircleColor('#a48270')"></li>    
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="fb.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="insta.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+
+        function imgSlider(anything) {
+            document.querySelector('.macaron').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html> 
